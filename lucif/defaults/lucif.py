@@ -15,7 +15,7 @@ class Lucif(commands.Bot):
             )
         )
 
-    @watch(path='cogs')
+    @watch(path='lucif/cogs')
     async def on_ready(self):
         print('Bot ready.')
 
