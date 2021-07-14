@@ -1,6 +1,9 @@
 from defaults import lucif
 import asyncio
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 lucif = lucif.Lucif()
 
-lucif.run('ODY0Njc3NTAyNzk0MjAzMTQ2.YO47rQ.pctezPgtS2LNO1VbV1oBQauI7hs')
+lucif.run(os.environ['TOKEN'])
