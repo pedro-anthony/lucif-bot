@@ -10,6 +10,7 @@ python = "^3.9"
 "discord.py" = "^1.7.3"
 cogwatch = "^2.1.0"
 python-dotenv = "^0.18.0"
+jishaku = "^2.1.0"
 
 [tool.poetry.scripts]
 loader="lucif.loader:run"

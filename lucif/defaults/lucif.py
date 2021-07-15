@@ -1,6 +1,7 @@
 from discord.ext import commands
 import discord
 from cogwatch import watch
+from lucif.utils.pretty_help import PrettyHelp
 
 class Lucif(commands.Bot):
     def __init__(self):
@@ -12,7 +13,8 @@ class Lucif(commands.Bot):
                 everyone=False,      # to prevent a poo poo stinky eval leak
                 roles=False,         
                 replied_user=False,  
-            )
+            ),
+            help_command=PrettyHelp(color=0x00aeff)
         )
 
     @watch(path='lucif/cogs')
