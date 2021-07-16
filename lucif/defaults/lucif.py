@@ -1,7 +1,8 @@
 from discord.ext import commands
 import discord
 from cogwatch import watch
-from lucif.utils.pretty_help import PrettyHelp
+from pretty_help import PrettyHelp
+
 
 class Lucif(commands.Bot):
     def __init__(self):
